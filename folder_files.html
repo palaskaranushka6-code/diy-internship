@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Explorer</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            width: 700px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .item:hover {
+            background-color: #f0f8ff;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .folder-icon {
+            color: orange;
+        }
+
+        .file-icon {
+            color: #3498db;
+        }
+
+        .details {
+            color: gray;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>File Explorer</h2>
+
+    <!-- Folder -->
+    <div class="item">
+        <div class="left">
+            <i class="fa-solid fa-folder folder-icon"></i>
+            <span>Documents</span>
+        </div>
+        <div class="details">
+            Folder • Modified: 25 May 2026
+        </div>
+    </div>
+
+    <!-- File -->
+    <div class="item">
+        <div class="left">
+            <i class="fa-solid fa-file file-icon"></i>
+            <span>resume.pdf</span>
+        </div>
+        <div class="details">
+            2.4 MB • Modified: 20 May 2026
+        </div>
+    </div>
+
+    <!-- File -->
+    <div class="item">
+        <div class="left">
+            <i class="fa-solid fa-file-lines file-icon"></i>
+            <span>notes.txt</span>
+        </div>
+        <div class="details">
+            15 KB • Modified: 18 May 2026
+        </div>
+    </div>
+
+    <!-- Folder -->
+    <div class="item">
+        <div class="left">
+            <i class="fa-solid fa-folder folder-icon"></i>
+            <span>Projects</span>
+        </div>
+        <div class="details">
+            Folder • Modified: 10 May 2026
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
